@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HYDROHAWK</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+     
+     setInterval(changeBackgroundImage, 5000);
+     
+      
+        function changeBackgroundImage() {
+          var container = document.getElementById('container');
+          var images = ['asserts/BI/b1.png', 'asserts/BI/b2.png'];
+          var randomIndex = Math.floor(Math.random() * images.length);
+          container.style.backgroundImage = `url('${images[randomIndex]}')`;
+        }
+    
+
+  </script>
+  <nav>
+    <div class="logo"><img src="/logo.png" alt="" srcset=""></div>
+    <ul>
+      <li><a href="#" class="alert" ><span>Alert</span><img src="/caution-icon.png" alt=""></a></li>
+      
+      <li><a href="#" class="emergency" ><span>Emergency</span><img src="/emergency-call.png" alt=""></a></li>
+      <li><a href="#"class="feedback" ><span>Feedback</span><img src="/feedback.png" alt=""></a></li>
+    </ul>
+  </nav>
+  
+  <div class="container" id="container" >
+   
+  
+    
+    <div class="button">
+    <button type="button" id="btn1" class="btn1" onclick="changeBackgroundImage()" ><img src="/btn1.png" alt=""></button>
+    <button type="button" id="btn2" class="btn2" onclick="changeBackgroundImage()"><img src="/btn2.png" alt=""></button>
+   
+  </div>
+  <h1>Welcome to Hydrohawk Service Site</h1>
+  <p>Lets make our city Advance</p>
+  <button class="cssbuttons-io-button">
+    Get started
+    <div class="icon">
+      <svg
+        height="24"
+        width="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+  </button>
+  
+  </div>
+</body>
+</html>
